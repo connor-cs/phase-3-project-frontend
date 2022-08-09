@@ -32,13 +32,22 @@ function App() {
     .then(data =>setTasks([...tasks, data]))
   }
 
+  function handleDelete(id){
+    fetch(`http://localhost:9292/todos/${id}`, {
+      method: "DELETE",
+    })
+    .then(r =>r.json())
+    .then(data => setTasks(tasks.filter(task=>task.id !== id)))
+  }
+
+
 
 
   return(
     <div className="App">
       <Header />
       <Form handleAdd={handleAdd}/>
-      <TaskContainer tasks={tasks}/>
+      <TaskContainer tasks={tasks} handleDelete={handleDelete}/>
     </div>
 )}
 

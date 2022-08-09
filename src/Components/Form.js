@@ -17,7 +17,7 @@ export default function Form({handleAdd}) {
   
     return (
     <form onSubmit={(e)=>addButton(e)}>
-      <input type="text" placeholder="add task"></input>
+      <input type="text" placeholder="add task here"></input>
       <select>
         <option value="Flatiron">Flatiron</option>
         <option value="Personal">Personal</option>
