@@ -10,7 +10,7 @@ export default function TaskContainer({ tasks }) {
         {tasks.map(task => (
           <Task
             key={task.id}
-            taskName={task.taskName}
+            taskname={task.taskname}
             completed={task.completed} />
         )
         )}

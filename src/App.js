@@ -20,16 +20,13 @@ function App() {
     fetchData()
   }, [])
 
-  function handleAdd(e){
+  function handleAdd(obj){
     fetch('http://localhost:9292/todos', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        "taskName": e,
-        "completed": false
-      })
+      body: JSON.stringify(obj)
     })
     .then(r => r.json())
     .then(data =>setTasks([...tasks, data]))

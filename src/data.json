@@ -2,28 +2,28 @@
   "todos": [
     {
       "id": "1",
-      "taskName": "complete required labs",
+      "taskname": "complete required labs",
       "completed": false
     },
     {
       "id": "2",
-      "taskName": "watch lecture",
+      "taskname": "watch lecture",
       "completed": false
     },
     {
       "id": "3",
-      "taskName": "go to gym",
+      "taskname": "go to gym",
       "completed": false
     },
     {
       "id": "4",
-      "taskName": "go for walk",
+      "taskname": "go for walk",
       "completed": false
     },
     {
-      "taskName": "asdfasdad",
-      "completed": false,
-      "id": "MIJfND7"
+      "taskname": "dasfdafsdf",
+      "category": "",
+      "id": "2c3IQU2"
     }
   ]
 }

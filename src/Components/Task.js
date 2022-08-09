@@ -1,12 +1,14 @@
 import React from 'react'
 
-export default function Task({ taskName, completed, id }) {
+export default function Task({ taskname, completed, id }) {
+    
     return (
-        <li>
+        <>
             <div key={id}>
-                <p>{taskName}</p>
+                <p>{taskname}</p>
                 <p>{completed}</p>
             </div>
-        </li>
+            <button>delete</button>
+            </>
     )
 }
