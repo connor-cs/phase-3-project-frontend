@@ -2,7 +2,7 @@ import React from 'react'
 import Task from './Task'
 import data from '../data.json'
 
-export default function TaskContainer({ tasks, handleDelete }) {
+export default function TaskContainer({ tasks, handleDelete, handleEdit, seteditTask }) {
   
   return (
     <main>
@@ -11,6 +11,8 @@ export default function TaskContainer({ tasks, handleDelete }) {
           <Task
             key={task.id}
             id={task.id}
+            seteditTask={seteditTask}
+            handleEdit={handleEdit}
             handleDelete={handleDelete}
             taskname={task.taskname}
             completed={task.completed} />

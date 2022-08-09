@@ -23,6 +23,24 @@
       "taskname": "go for walk",
       "category": "Fitness",
       "completed": false
+    },
+    {
+      "taskname": "meal prep",
+      "category": "Fitness",
+      "completed": false,
+      "id": "q1Oss_m"
+    },
+    {
+      "taskname": "gym",
+      "category": "Fitness",
+      "completed": false,
+      "id": "nZnc4qc"
+    },
+    {
+      "taskname": "add edit function",
+      "category": "Flatiron",
+      "completed": false,
+      "id": "lCbGAI6"
     }
   ]
 }
