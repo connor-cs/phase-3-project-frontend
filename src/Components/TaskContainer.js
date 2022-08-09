@@ -3,14 +3,13 @@ import Task from './Task'
 import data from '../data.json'
 
 export default function TaskContainer({ tasks }) {
-  console.log('tasks', tasks)
   
   return (
     <main>ListContainer
       <div>
         {tasks.map(task => (
-          console.log(task.taskName),
           <Task
+            key={task.id}
             taskName={task.taskName}
             completed={task.completed} />
         )

@@ -17,11 +17,26 @@ function App() {
 
   useEffect(() => {
     fetchData()
-   }, [])
+  }, [])
+
+  function handleAddTask(e){
+    fetch('http://localhost:9292/todos', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        "id": null,
+        "taskName": e.target.value,
+        "completed": false
+      })
+    })
+    .then()
+  }
 
   return(
     <div className="App">
-      <Header />
+      <Header handleAdd={handleAddTask}/>
       <TaskContainer tasks={tasks}/>
     </div>
 )}
