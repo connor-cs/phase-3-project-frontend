@@ -6,7 +6,7 @@ export default function Header({handleAdd}) {
   return (
     <header>
         <h1>TO DO LIST</h1>
-        <Form handleAdd={handleAdd}/>
+        {/* <Form handleAdd={handleAdd}/> */}
     </header>
   )
 }

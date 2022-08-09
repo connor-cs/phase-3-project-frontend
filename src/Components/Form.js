@@ -1,17 +1,18 @@
 import React from 'react'
+import {useState} from 'react'
 
 export default function Form({handleAdd}) {
 
   function addButton(e) {
     e.preventDefault()
-    console.log(e.target.value)
-    
-    handleAdd(e.target.value)}
+    console.log(e.target[0].value)
+    handleAdd(e.target[0].value)
+  }
   
     return (
-    <form>
+    <form onSubmit={(e)=>addButton(e)}>
       <input type="text" placeholder="add task"></input>
-      <button onSubmit={addButton} >add task</button>
+      {/* <button onClick={()=>addButton} >add task</button> */}
     </form>
   )
 }

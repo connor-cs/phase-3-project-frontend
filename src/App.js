@@ -2,6 +2,7 @@ import Header from "./Components/Header";
 import TaskContainer from "./Components/TaskContainer";
 import data from './data.json'
 import {useState, useEffect} from 'react'
+import Form from "./Components/Form";
 
 function App() {
 
@@ -19,24 +20,27 @@ function App() {
     fetchData()
   }, [])
 
-  function handleAddTask(e){
+  function handleAdd(e){
     fetch('http://localhost:9292/todos', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        "id": null,
-        "taskName": e.target.value,
+        "taskName": e,
         "completed": false
       })
     })
-    .then()
+    .then(r => r.json())
+    .then(data =>setTasks([...tasks, data]))
   }
+
+
 
   return(
     <div className="App">
-      <Header handleAdd={handleAddTask}/>
+      <Header />
+      <Form handleAdd={handleAdd}/>
       <TaskContainer tasks={tasks}/>
     </div>
 )}

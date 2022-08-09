@@ -5,7 +5,7 @@ import data from '../data.json'
 export default function TaskContainer({ tasks }) {
   
   return (
-    <main>ListContainer
+    <main>
       <div>
         {tasks.map(task => (
           <Task
