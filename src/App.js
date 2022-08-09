@@ -5,13 +5,13 @@ import {useState, useEffect} from 'react'
 
 function App() {
 
-  const [tasks, setTasks] = useState([data])
+  const [tasks, setTasks] = useState([])
 
   const fetchData = () => {
-    return fetch('https://localhost:9292')
+    return fetch('http://localhost:9292/todos')
     .then((response) => response.json())
     .then((dataAPI) => {
-      setTasks([dataAPI])
+      setTasks([...dataAPI])
     })
   }
 
