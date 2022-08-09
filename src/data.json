@@ -3,27 +3,32 @@
     {
       "id": "1",
       "taskname": "complete required labs",
+      "category": "Flatiron",
       "completed": false
     },
     {
       "id": "2",
       "taskname": "watch lecture",
+      "category": "Flatiron",
       "completed": false
     },
     {
       "id": "3",
-      "taskname": "go to gym",
+      "taskname": "Go to gym",
+      "category": "Fitness",
       "completed": false
     },
     {
       "id": "4",
       "taskname": "go for walk",
+      "category": "Fitness",
       "completed": false
     },
     {
-      "taskname": "dasfdafsdf",
-      "category": "",
-      "id": "2c3IQU2"
+      "taskname": "finish code challenge",
+      "category": "Flatiron",
+      "completed": false,
+      "id": "GHv-Yox"
     }
   ]
 }
