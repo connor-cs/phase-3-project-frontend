@@ -6,7 +6,7 @@ export default function TaskContainer({ tasks, handleDelete, handleEdit, setedit
   
   return (
     <main>
-      <div>
+      <div className='container'>
         {tasks.map(task => (
           <Task
             key={task.id}
@@ -15,7 +15,7 @@ export default function TaskContainer({ tasks, handleDelete, handleEdit, setedit
             handleEdit={handleEdit}
             handleDelete={handleDelete}
             taskname={task.taskname}
-            completed={task.completed} />
+            category={task.category} />
         )
         )}
       </div>

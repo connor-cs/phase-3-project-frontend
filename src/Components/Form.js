@@ -9,16 +9,10 @@ export default function Form({handleAdd, editTask, handleEdit}) {
     settodoDesc(e.target.value)
   }
 
-
-//also need to make post?
   function addButton(e) {
     e.preventDefault()
     console.log(e.target[0].value)
     console.log(e.target[1].value)
-    if (editTask.id){
-      handleEdit(editTask.id, e.target[0].value)
-    }
-    else {
       let obj = {
         "taskname": e.target[0].value,
         "category": e.target[1].value,
@@ -27,13 +21,12 @@ export default function Form({handleAdd, editTask, handleEdit}) {
       handleAdd(obj)
       settodoDesc('')
     }
-   
-  }
   
     return (
+      <div className='form'>
     <form onSubmit={(e)=>addButton(e)}>
       <input type="text" onChange={handleChange} placeholder="add task here" ></input>
-      <label className='dropdown' label for="dropdown">Choose task type: </label>
+      <label className='dropdown' labelfor="dropdown">  Choose task type: </label>
       <select>
         <option value="Flatiron">Flatiron</option>
         <option value="Personal">Personal</option>
@@ -41,5 +34,6 @@ export default function Form({handleAdd, editTask, handleEdit}) {
       </select>
       {/* <button onClick={()=>addButton} >add task</button> */}
     </form>
+    </div>
   )
 }

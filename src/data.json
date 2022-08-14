@@ -8,7 +8,7 @@
     },
     {
       "id": "3",
-      "taskname": "Go to gym",
+      "taskname": "go to gym",
       "category": "Fitness",
       "completed": false
     },
@@ -29,6 +29,12 @@
       "category": "Fitness",
       "completed": false,
       "id": "nZnc4qc"
+    },
+    {
+      "taskname": "clean kitchen",
+      "category": "Personal",
+      "completed": false,
+      "id": "J39WDYK"
     }
   ]
 }

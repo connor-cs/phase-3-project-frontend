@@ -28,11 +28,25 @@ body{
   font-size: 14px;
 }
 
-.title{
-
+.container{
+  border: 5px solid lightblue;
+  border-radius: 25px;
+  padding: 15px;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  justify-content: center;
 }
 
 .delete{
   background: lightblue;
   border: lightblue;
+}
+
+.form{
+  margin-bottom: 15px;
+}
+
+.category{
+  font-size: 12px;
 }
