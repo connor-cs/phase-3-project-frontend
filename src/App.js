@@ -48,27 +48,27 @@ function App() {
   }
 
   //PATCH
-  function handleEdit(id, update){
-    fetch(`http://localhost:9292/todos/${id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        taskname: update
-      }),
-    })
-    .then(r=>r.json())
-    .then(() => setTasks(tasks))
-  }
+  // function handleEdit(id, update){
+  //   fetch(`http://localhost:9292/todos/${id}`, {
+  //     method: "PATCH",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({
+  //       taskname: update
+  //     }),
+  //   })
+  //   .then(r=>r.json())
+  //   .then(() => setTasks(tasks))
+  // }
 
 
 
   return(
     <div className="App">
       <Header />
-      <Form handleAdd={handleAdd} editTask={editTask} handleEdit={handleEdit}/>
-      <TaskContainer seteditTask={seteditTask} tasks={tasks} handleDelete={handleDelete} handleEdit={handleEdit}/>
+      <Form handleAdd={handleAdd} />
+      <TaskContainer seteditTask={seteditTask} tasks={tasks} handleDelete={handleDelete} />
     </div>
 )}
 

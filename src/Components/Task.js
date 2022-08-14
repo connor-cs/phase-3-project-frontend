@@ -7,20 +7,21 @@ export default function Task({ taskname, completed, id, handleDelete, handleEdit
         handleDelete(id)
     }
 
-    function handleEditClick(id, update){
-        seteditTask({
-            taskname, completed, id
-        })
-        handleEdit(id, update)
-    }
+    // function handleEditClick(id, update){
+    //     seteditTask({
+    //         taskname, completed, id
+    //     })
+    //     handleEdit(id, update)
+    // }
 
     return (
         <>
             <div key={id}>
                 <p>{taskname}</p>
             </div>
-            <button onClick={()=>handleDeleteClick(id)}>delete</button>
-            <button onClick={()=>handleEditClick(id)}>edit</button>
+
+            <button className="delete" onClick={()=>handleDeleteClick(id)}>delete</button>
+            {/* <button onClick={()=>handleEditClick(id)}>edit</button> */}
         </>
     )
 }

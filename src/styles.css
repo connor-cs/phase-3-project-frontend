@@ -17,3 +17,22 @@ code {
   max-width: 960px;
   margin: 0 auto;
 }
+
+body{
+  background: lightyellow;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.dropdown{
+  font-size: 14px;
+}
+
+.title{
+
+}
+
+.delete{
+  background: lightblue;
+  border: lightblue;
+}

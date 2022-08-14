@@ -32,7 +32,8 @@ export default function Form({handleAdd, editTask, handleEdit}) {
   
     return (
     <form onSubmit={(e)=>addButton(e)}>
-      <input type="text" onChange={handleChange} placeholder="add task here" value={editTask.id ? editTask.taskname : todoDesc}></input>
+      <input type="text" onChange={handleChange} placeholder="add task here" ></input>
+      <label className='dropdown' label for="dropdown">Choose task type: </label>
       <select>
         <option value="Flatiron">Flatiron</option>
         <option value="Personal">Personal</option>

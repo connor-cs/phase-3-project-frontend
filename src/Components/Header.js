@@ -4,9 +4,8 @@ import Form from './Form'
 
 export default function Header({handleAdd}) {
   return (
-    <header>
+    <header className='title'>
         <h1>TO DO LIST</h1>
-        {/* <Form handleAdd={handleAdd}/> */}
     </header>
   )
 }

@@ -1,12 +1,6 @@
 {
   "todos": [
     {
-      "id": "1",
-      "taskname": "complete required labs",
-      "category": "Flatiron",
-      "completed": false
-    },
-    {
       "id": "2",
       "taskname": "watch lecture",
       "category": "Flatiron",
@@ -35,12 +29,6 @@
       "category": "Fitness",
       "completed": false,
       "id": "nZnc4qc"
-    },
-    {
-      "taskname": "add edit function",
-      "category": "Flatiron",
-      "completed": false,
-      "id": "lCbGAI6"
     }
   ]
 }
