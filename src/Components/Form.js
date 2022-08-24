@@ -3,7 +3,7 @@ import {useState} from 'react'
 
 export default function Form({handleAdd, editTask, handleEdit}) {
 
-  const [todoDesc, settodoDesc] = useState('')
+  const [todoDesc, setTodoDesc] = useState('')
   
   function handleChange(e){
     settodoDesc(e.target.value)
@@ -19,7 +19,7 @@ export default function Form({handleAdd, editTask, handleEdit}) {
         "completed": false
       }
       handleAdd(obj)
-      settodoDesc('')
+      setTodoDesc('')
     }
   
     return (
@@ -32,7 +32,6 @@ export default function Form({handleAdd, editTask, handleEdit}) {
         <option value="Personal">Personal</option>
         <option value="Fitness">Fitness</option>
       </select>
-      {/* <button onClick={()=>addButton} >add task</button> */}
     </form>
     </div>
   )
