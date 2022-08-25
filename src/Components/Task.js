@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Task({ taskname, completed, id, handleDelete, category}) {
+export default function Task({ taskname, id, handleDelete, category}) {
     
     function handleDeleteClick(id){
         handleDelete(id)

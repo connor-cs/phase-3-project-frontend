@@ -6,7 +6,7 @@ export default function Form({handleAdd, editTask, handleEdit}) {
   const [todoDesc, setTodoDesc] = useState('')
   
   function handleChange(e){
-    settodoDesc(e.target.value)
+    setTodoDesc(e.target.value)
   }
 
   function addButton(e) {
